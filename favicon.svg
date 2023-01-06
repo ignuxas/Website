@@ -7,56 +7,52 @@
    viewBox="0 0 180 180"
    version="1.1"
    id="svg5"
+   sodipodi:docname="LogoRound.svg"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
-   sodipodi:docname="LogoNewNew.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
-     id="namedview7"
+     id="namedview14"
      pagecolor="#505050"
      bordercolor="#eeeeee"
      borderopacity="1"
      inkscape:pageshadow="0"
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
-     inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="2.2861111"
-     inkscape:cx="126.41555"
-     inkscape:cy="101.91981"
+     inkscape:cx="-3.4993925"
+     inkscape:cy="95.358445"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer3" />
+     inkscape:current-layer="svg5" />
   <defs
      id="defs2" />
   <g
-     inkscape:label="Sluoksnis 1"
-     inkscape:groupmode="layer"
      id="layer1"
-     style="display:inline">
+     style="display:inline"
+     transform="matrix(1.1367053,0,0,1.1367053,-11.435405,-11.433332)">
     <circle
-       style="fill:#0a192f;fill-opacity:1;stroke:#ffffff;opacity:1;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+       style="opacity:1;fill:#0a192f;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
        id="path867"
        cx="89.236328"
        cy="89.234505"
        r="78.736328" />
   </g>
   <g
-     inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="Sluoksnis 2">
+     transform="matrix(1.1713469,0,0,1.1713469,-15.525741,-14.416078)">
     <g
        id="g839"
        transform="matrix(0.42472648,0,0,0.42472648,-17.266013,-17.67517)"
        style="display:inline;fill:#ccd6f6;fill-opacity:1">
       <g
-         inkscape:label="Sluoksnis 1"
          id="layer1-3"
          style="display:none;fill:#ccd6f6;fill-opacity:1">
         <image
@@ -71,7 +67,6 @@
       </g>
       <g
          id="layer2"
-         inkscape:label="Sluoksnis 2"
          style="fill:#ccd6f6;fill-opacity:1">
         <text
            xml:space="preserve"
@@ -79,7 +74,6 @@
            x="121.5965"
            y="317.02878"
            id="text3082"><tspan
-             sodipodi:role="line"
              id="tspan3080"
              x="121.5965"
              y="317.02878"
@@ -89,10 +83,7 @@
            id="path28608"
            cx="215.26799"
            cy="148.56078"
-           r="12.767099"
-           inkscape:export-filename="C:\Users\mikol\Documents\Logo\LogoBlack.png"
-           inkscape:export-xdpi="96"
-           inkscape:export-ydpi="96" />
+           r="12.767099" />
       </g>
     </g>
   </g>

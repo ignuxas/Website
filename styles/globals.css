@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+html{
+  scroll-behavior: smooth;
+  overflow: overlay;
+  overflow-x: hidden;
+}
+
+:root {
+  --color-background: #0d1117;
+  --cyan: #64ffda;
+  --slate: #ccd6f6;
+  --light-slate: #a8b2d1;
+  --dark-slate: #8892b0;
+  --navy: #0a192f;
+  --navy-shadow-hover: rgba(0, 0, 0, 0.8);
+  --navy-shadow: rgba(0, 0, 0, 0.5);
+
+  --font-mono: 'Fira Code', monospace;
+  --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+
+  --fz-xxs: 12px;
+  --fz-sm: 14px;
+  --fz-m: 16px;
+  --fz-l: 20px;
+  --fz-xl: 24px;
+  --fz-title: 32px;
+
+  --pad1x: 10px;
+  --pad2x: 20px;
+  --pad3x: 30px;
+  --pad4x: 40px;
+
+  --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+
+  --border-radius: 6px;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--color-background);
+  font-size: var(--fz-xl);
+  color: var(--slate);
+}
+
+#experience {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+  .experienceCard {
+    position: relative;
+    padding-bottom: 38px;
+  }
+  .experienceCard:first-of-type {
+    padding-bottom: 32px;
+  }
+  .experienceCardTitle {
+    font-size: var(--fz-l);
+    font-weight: 600;
+    margin-bottom: var(--pad1x);
+  }
+  .experienceCard:last-of-type {
+    padding-bottom: 0;
+  }
+
+  .experienceCardTitleText {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  #experience li {
+    margin-bottom: var(--pad2x);
+    font-size: var(--fz-sm);
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+  #experience li::marker {
+    content: "▸";
+    margin-right: 10px;
+    color: var(--cyan);
+  }
+  .experienceCardTitle:before {
+    position: relative;
+    content: "★";
+    font-weight: 700;
+    margin-right: 10px;
+    left: -2px;
+    top: -3px;
+    color: var(--cyan);
+    text-shadow: 0 0 2px var(--cyan),0 0 10px var(--cyan);
+    font-size: var(--fz-lg);
+    transition: none!important;
+  }
+  .experienceCard.alt .experienceCardTitle:before {
+    content: "✧";
+    color: var(--cyan);
+
+    left: 0;
+    font-size: var(--fz-sm);
+  }
+
+  .verticalLineContainer {
+    position: absolute;
+    top: 16px;
+    width: 2px;
+    left: 5px;
+    height: 100%;
+    overflow: hidden;
+  }
+    .verticalLine {
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(180deg,#64ffda,transparent);
+      border-radius: 6px;
+    }
+    .verticalLine.fill {
+      background: linear-gradient(180deg,#64ffda,#358b77);
+    }
+  [data-aos=height0to100] {
+      height: 0%;
+      transition-property: height;
+  }
+  [data-aos=height0to100].aos-animate {
+      height: 100%;
+  }
+  .experienceCardLogo{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 26px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+  .blueGlow {filter: drop-shadow(0 0 12px rgb(0,110,255));}
+  .whiteGlow {filter: drop-shadow(0 0 12px white);}
+  #experience .date {
+    position: relative;
+    font-size: var(--fz-sm);
+    font-weight: 400;
+    float: right;
+    top: 3px;
+    font-family: var(--font-mono);
+  }
+  #experience .numberedHeading:after {width: 50%;}
+
+.glow {
+  text-shadow: 0 0 2px var(--cyan),0 0 10px var(--cyan);
+}
+.textBlue {
+  color: var(--cyan);
+}
+
+header{
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  top: 0;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-family: var(--font-mono);
+  font-size: var(--fz-sm);
+  transition: var(--transition);
+}
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 var(--pad3x);
+  }
+  header img{
+    margin-left: var(--pad2x);
+    height: 90px;
+    transition: var(--transition);
+    -webkit-filter: drop-shadow( 0px 0px 2px rgba(255, 255, 255, 0.4));
+    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.4));
+  }
+  header img:hover{
+    -webkit-filter: drop-shadow( 0px 0px 2px rgba(255, 255, 255, 0.9));
+    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.9));
+  }
+  #headerLinks ol{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+  }
+    #headerLinks ol li{
+      padding: 10px;
+      counter-increment: item 1;
+      cursor: pointer;
+    }
+    #headerLinks ol li span::before{
+      content: "0" counter(item) ".";
+      margin-right: 5px;
+      color: var(--cyan);
+      font-size: var(--fz-xxs);
+      text-align: right;
+    }
+  #MenuBtn{
+    width: 36px;
+    height: 36px;
+    color: white;
+    display: none;
+    margin-right: var(--pad2x);
+    cursor: pointer;
+  }
+  #MenuBg.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+  #Menu.open {
+    right: 0;
+  }
+  #MenuBg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100vw;
+    transition: linear 0.2s;
+    z-index: 5;
+  }
+  #Menu {
+    font-family: var(--font-mono);
+    font-size: var(--fz-l);
+    position: fixed;
+    top: 0;
+    right: -360px;
+    background-color: #0d1117;
+    height: 100vh;
+    width: 320px;
+    transition: var(--transition);
+    z-index: 10;
+  }
+    #Menu ol {
+      margin-left: 4px;
+    }
+    #Menu ol li {
+      padding: var(--pad2x) 0;
+    }
+    #Menu ol li::marker {
+      color: var(--cyan);
+      font-size: var(--fz-sm);
+      padding: var(--pad2x) 0;
+    }
+    #Menu a {
+      position: absolute;
+      width: 100%;
+      bottom: var(--pad2x);
+    }
+    .menuHeader {
+      font-size: var(--fz-xl);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: var(--slate) 1px solid;
+      padding: var(--pad2x);
+    }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button{
+  color: var(--cyan);
+  background-color: transparent;
+  border: 1px solid var(--cyan);
+  border-radius: var(--border-radius);
+  font-size: var(--fz-sm);
+  font-family: var(--font-mono);
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+  padding: 1.25rem 1.75rem;
+  margin: 80px auto 0px;
+}
+  button:hover{
+    background-color: #64ffdb1a;
+  }
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aBlue {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  color: var(--cyan);
+}
+.aBlue::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--cyan);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.aBlue:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.titleColor {
+  color: var(--slate);
+}
+  .titleColor.aBlue:after {
+    background-color: var(--slate) !important;
+  }
+
+footer{
+  width: 100%;
+  font-size: var(--fz-sm);
+  font-family: var(--font-mono);
+  color: var(--light-slate);
+}
+.footerContent{
+  width: 100%;
+  text-align: center;
+  padding: var(--pad2x) 0;
+}
+footer a{transition: var(--transition);}
+  footer a:hover{color: var(--cyan);}
+
+::-webkit-scrollbar{
+  width: 14px;
+  background: transparent;}
+::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-color: var(--dark-slate);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  #experience {width: 100%;}
+  .experienceCardTitle {padding-left: var(--pad2x);}
+  .experienceCardTitle:before {top: 3px; left: 0; position: absolute;}
+}
+
+@media screen and (max-width: 768px) {
+  #MenuBtn {display: block;}
+  #navigation {padding: 0 5px;}
+  #headerLinks {display: none;}
+  .experienceCardTitle {margin-right: 200px;}
+}
